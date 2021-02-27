@@ -1,14 +1,27 @@
 import React from 'react';
+import './Users.css';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPlus } from '@fortawesome/free-solid-svg-icons'
+import User from '../User/User';
 
-const element = <FontAwesomeIcon icon={faPlus} />
-
-const Users = () => {
+const Users = (props) => {
+    const totalSalary = props.selectUser.reduce((sum, item) => sum += item.salary, 0);
     return (
-        <div>
-            
+        <div className="users-container">
+            <div className="users-list">
+                {
+                    props.users.map(user => {
+                        return (
+                            <div>
+                                <User user={user} handleAddUserBtn = {props.handleAddUserBtn}/>
+                            </div>
+                        )
+                    })
+                }
+            </div>
+            <div className="added-list">
+                <h2>Total Added : {props.selectUser.length}</h2>
+                <p><strong>Total Salary: $ {totalSalary}</strong></p>
+            </div>
         </div>
     );
 };

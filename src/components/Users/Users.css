@@ -1,0 +1,15 @@
+.users-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+
+.users-list {
+    width: 50%;
+    margin: 20px;
+}
+
+.added-list {
+    width: 30%;
+    margin: 10px;
+}

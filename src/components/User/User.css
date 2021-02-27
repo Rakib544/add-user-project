@@ -1,0 +1,35 @@
+.single-user-container {
+    display: flex;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    margin: 10px;
+    text-align: center;
+}
+.single-user-img {
+    width: 220px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.single-user-info {
+    padding: 10px;
+    text-align: left;
+}
+
+.add-user-button {
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: deepskyblue;
+    color: #fff;
+    cursor: pointer;
+}
+
+strong {
+    display: block;
+    margin-bottom: 8px;
+}
+
